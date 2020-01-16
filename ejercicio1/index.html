@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ejercicio 1 de clase de diseño web.">
+    <meta name="author" content="David H">
+    <title>Ejercicio 1.</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Aquí comienza mi header -->
+        <header>
+            <nav>
+                <ul>
+                    <a href="#"><li>Inicio</li></a>
+                    <a href="portafolio.html"><li>Portafolio</li></a>
+                    <a href="#"><li>Fotografía</li></a>
+                    <a href="#"><li>Diseño</li></a>
+                    <a href="#contacto"><li>Contacto</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Primer página web.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nemo reprehenderit porro, excepturi officiis quibusdam impedit numquam placeat atque? Veritatis eum at voluptatem ducimus cupiditate corrupti explicabo, perferendis perspiciatis voluptate.</p>
+            <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, officiis quis tempora nisi quasi aspernatur, laudantium doloremque, numquam dignissimos quam dolorum? Illo quasi tenetur earum animi accusamus neque minima deleniti!</p>
+            <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut accusamus excepturi iusto beatae! Ratione unde esse reiciendis temporibus iste totam quae porro, ipsum facilis illum eveniet sequi ducimus cupiditate labore.</p>
+            <section>
+                <h2>Imágenes.</h2>
+                <img src="images/cat.jpg" alt="Imagen de gato ojón.">
+                <img src="images/cat_love.gif" alt="Imagen de gato abrazador.">
+                <img src="images/gato-transparente.png" alt="Imagen de gato acostado.">
+                <img src="images/cat_vectores.svg" alt="Silueta de gato.">
+            </section>
+            <section>
+                <h2>Videos local.</h2>
+                <video controls>
+                    <source src="media/ErickFinal.mp4" type="video/mp4">
+                    <source src="media/ErickFinal.ogv" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Videos online.</h2>
+                <h3>Vimeo.</h3>
+                <iframe src="https://player.vimeo.com/video/384874292" width="600" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <h3>Youtube.</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_FrOQC-zEog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h2>Audios.</h2>
+                <audio controls>
+                    <source src="media/Mambo.mp3" type="audio/mpeg">
+                    <source src="media/Mambo.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+            <section>
+                <h2>Mapa.</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30106.23519251198!2d-99.26869461837838!3d19.400330378340637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25d193ca03273468!2sCADIT%20Universidad%20An%C3%A1huac%20Norte!5e0!3m2!1ses!2smx!4v1579184635590!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+        </main>
+        <footer id="contacto">
+            <ul>
+                <a href="https://www.facebook.com/david.hernandez.mendez" target="_blank"><li><img src="images/iconmonstr-facebook-6.svg" alt="Logo de Facebbok." class="logo"></li></a>
+                <a href="https://www.instagram.com/davemx/" target="_blank"><li><img src="images/iconmonstr-instagram-13.svg" alt="Logo de Instagram." class="logo"></li></a>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
