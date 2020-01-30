@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes respomsivas.</title>
+    <link rel="stylesheet" href="css/res.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imágenes responsivas.</h1>
+        </header>
+        <main>
+            <img
+            src="images/cat-2048.jpg"
+            alt="Imagen de gato."
+            sizes="(max-width: 2048px) 100vw, 2048px"
+            srcset="
+                images/cat-468.jpg 468w,
+                images/cat-768.jpg 768w,
+                images/cat-1024.jpg 1024w,
+                images/cat-1280.jpg 1280w,
+                images/cat-1600.jpg 1600w,
+                images/cat-1920.jpg 1920w,
+            ">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/cat-468.jpg">
+                <source media="(min-width: 768px)" srcset="images/cat-768.jpg">
+                <img src="images/cat-2048.jpg" alt="Gato.">
+            </picture>
+        </main>
+        <footer>
+            <p>Sitio. ®</p>
+        </footer>
+    </div>
+</body>
+</html>
