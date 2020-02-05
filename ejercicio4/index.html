@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="content" content="Ejercicio 4, vivus.js.">
+    <meta name="author" content="David H">
+    <title>Ejercicio 4.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vivus.js.</h1>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="https://maxwellito.github.io/vivus/">Vivus</a></li>
+                <li><a href="https://github.com/maxwellito/vivus">Vivus github</a></li>
+                <li><a href="https://www.jsdelivr.com/package/npm/vivus">Vivus CDN.</a></li>
+            </ul>
+        </aside>
+        <main>
+
+            <!-- Con svg puesto directamente -->
+        <h2>Svg directo.</h2>
+        <svg version="1.1" id="svg-casita" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 329.53 388.94" style="enable-background:new 0 0 329.53 388.94;" xml:space="preserve">
+        <style type="text/css">
+	.st0{fill:none;stroke:#BE1E2D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        </style>
+        <polygon class="st0" points="271.86,209.51 211.22,244.51 211.34,284.19 272.17,319.54 "/>
+        <polygon class="st0" points="325.98,93.55 172.36,4.28 87.56,3 241.18,92.27 "/>
+        <polygon class="st0" points="271.86,209.51 272.17,319.54 326.53,288.16 325.98,93.55 241.18,92.27 156.62,191.33 157.17,385.94 
+	211.54,354.55 211.34,284.19 211.22,244.51 "/>
+        <polygon class="st0" points="156.62,191.33 3,102.06 3.55,296.67 157.17,385.94 "/>
+        <polygon class="st0" points="156.62,191.33 241.18,92.27 87.56,3 3,102.06 "/>
+        </svg>
+
+            <!-- Con etiqueta de objeto -->
+        <h2>En objeto.</h2>
+        <object id="my-svg" type="image/svg+xml" data="images/casita.svg"></object>
+        
+            <!-- En un simple div con id -->
+        <h2>En div.</h2>
+        <div id="casita"></div>
+        </main>
+        
+        <footer><p>Yeah!</p></footer>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+    <script>
+        new Vivus('svg-casita', {duration: 200});
+        new Vivus('my-svg', {type: 'delayed', duration: 150});
+        new Vivus('casita', {duration: 100, type: 'scenario-sync', file: 'images/casita.svg' });
+    </script>
+</body>
+</html>
