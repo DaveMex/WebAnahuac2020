@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Oswald:300,400,700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+}
+p, li {
+    font-family: 'Libre Baskerville', serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr 200px;
+  gap: 5px;
+  grid-template-areas:
+  ". . he he he he he he"
+  "ma ma ma ma ma ma . ."
+  "ma ma ma ma ma ma . ."
+  "ma ma ma ma ma ma . ."
+  ". . . . . . . ."
+  "fo fo fo fo fo fo fo fo"
+  ;
+}
+header {
+  grid-area: he;
+  background-color: #f0ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  grid-area: ma;
+  background-color: #d1ffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+  grid-area: fo;
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 40vw;
+}
+a {
+  text-decoration: none;
+  color: #484848;
+}
+a:hover {
+  color: #a50000;
+}
+footer a {
+  color: #f0ffff;
+}
+section {
+  width: 23vw;
+  height: 40vh;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: .5rem;
+}
+section:nth-child(5) {
+  background-color: red;
+}
+i.fas, i.fab {
+  font-size: 3rem;
+  width: 3rem;
+}
