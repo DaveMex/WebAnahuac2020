@@ -75,6 +75,8 @@ section:nth-child(5) {
   background-color: red;
 }
 i.fas, i.fab {
-  font-size: 3rem;
-  width: 3rem;
+  font-size: 4rem;
+}
+i.fas:hover, i.fab:hover {
+  color: #a50000;
 }
