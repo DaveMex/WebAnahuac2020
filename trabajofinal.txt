@@ -1,0 +1,14 @@
+Github
+Dominio y hosting
+Responsivo
+html/css
+css grid
+js
+Google anlytics
+Google site-verified
+sitemap.xml
+Robots.txt
+Web fonts
+Favicon
+contacto (email ofuscado)
+Páginas de Error (404, 400, 401, 403)

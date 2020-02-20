@@ -104,6 +104,7 @@ a {
     }
     h1 {
         color: #ffffff;
+        text-align: left;
     }
 }
   
@@ -113,5 +114,7 @@ a {
   */
   
 @media (min-width: 320px) and (max-width: 480px) {
-      
+      h1 {
+          font-size: 3rem;
+      }
 }
